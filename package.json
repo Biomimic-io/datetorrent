@@ -1,0 +1,46 @@
+{
+  "name": "datetorrent",
+  "version": "0.1.0",
+  "description": "Serverless dating over GitTorrent: signed profiles in a git database, encrypted likes, matching done locally.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biomimic-io/datetorrent.git"
+  },
+  "homepage": "https://github.com/Biomimic-io/datetorrent#readme",
+  "bugs": {
+    "url": "https://github.com/Biomimic-io/datetorrent/issues"
+  },
+  "keywords": [
+    "dating",
+    "p2p",
+    "gittorrent",
+    "git",
+    "end-to-end-encryption",
+    "libsodium",
+    "local-first"
+  ],
+  "type": "commonjs",
+  "bin": {
+    "datetorrent": "bin/datetorrent.js"
+  },
+  "scripts": {
+    "start": "node bin/datetorrent.js ui",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "public"
+  ],
+  "dependencies": {
+    "libsodium-wrappers": "^0.7.16",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "jpeg-js": "^0.4.4"
+  }
+}
